@@ -1,0 +1,13 @@
+{
+  "name": "Rainbow Lights",
+  "short_name": "Rainbow Lights",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "rainbow_128.png",
+      "sizes": "128x128"
+    }
+  ]
+}
