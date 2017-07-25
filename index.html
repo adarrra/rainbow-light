@@ -32,4 +32,22 @@
      });
     }
 </script>
+<script src="./NoSleep.min.js"></script>
+<script>
+    const noSleep = new NoSleep();
+    
+    // Enable wake lock.
+    // (must be wrapped in a user input event handler e.g. a mouse or touch handler)
+    document.addEventListener('click', enableNoSleep, false);
+    //document.addEventListener('mouseover', enableNoSleep, false);
+    
+    function enableNoSleep() {
+      noSleep.enable();
+      console.log('noSleep enabled');
+      document.getElementsByClassName('cont')[0].innerHTML = "<h1> NOSLEEP ENABLED </h1>"; 
+      document.removeEventListener('click', enableNoSleep, false);
+      //document.removeEventListener('mouseover', enableNoSleep, false);
+    }
+</script>
+
   </html>
